@@ -51,31 +51,7 @@ export const Button = styled.button`
   }
 `;
 export const InputContainer = styled.div``;
-export const InputHeader = styled.div`
-  margin: 20px;
-`;
-export const InputForm = styled.form`
-  margin: 20px;
-  padding: 20px;
-  width: 80%;
-  background-color: rgba(197, 165, 244, 0.733);
-  max-width: 500px;
-  border-radius: 30px;
-`;
-export const InputDiv = styled.div``;
 
-export const Input = styled.input`
-  display: block;
-  box-sizing: border-box;
+export const Image = styled.img`
   width: 100%;
-  padding: 5px 5px 5px 0;
-  background: none;
-  border: none;
-  border-bottom: 1px solid black;
-  margin-bottom: 20px;
-
-  &:focus {
-    outline: none;
-    border-bottom: 1px solid rgb(89, 0, 255);
-  }
 `;

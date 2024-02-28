@@ -8,6 +8,7 @@ import {
   NavMenu,
   NavMenuItem,
 } from "./HeaderStyles";
+import logoImg from "../../assets/images/lamh.jpg";
 
 const Header = () => {
   return (
@@ -15,7 +16,7 @@ const Header = () => {
       <HeaderContainer>
         <InnerContainer>
           <LogoContainer>
-            <Logo>LAMH PLUS WORLDWIDE</Logo>
+            <Logo src={logoImg} />
           </LogoContainer>
           <NavContainer>
             <Nav>

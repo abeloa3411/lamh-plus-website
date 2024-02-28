@@ -20,8 +20,8 @@ export const LogoContainer = styled.div`
   text-align: center;
 `;
 
-export const Logo = styled.h2`
-  font-weight: bold;
+export const Logo = styled.img`
+  height: 15vh;
 `;
 
 export const NavContainer = styled.div``;

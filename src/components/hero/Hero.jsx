@@ -1,17 +1,15 @@
 import React from "react";
-import img from "../../assets/images/background.jpg";
+import img from "../../assets/images/bg.jpg";
+import img1 from "../../assets/images/flight.png";
 import {
   BackgroundImg,
   Button,
   ContentContainer,
   ContentText,
   HeroContainer,
+  Image,
   InnerContainer,
-  Input,
   InputContainer,
-  InputDiv,
-  InputForm,
-  InputHeader,
   TextContainer,
 } from "./HeroStyles";
 
@@ -29,25 +27,7 @@ const Hero = () => {
             <Button style={{ width: "40%" }}>our services</Button>
           </ContentText>
           <InputContainer>
-            <InputHeader>
-              <h2>Inquire now</h2>
-              <p>We will get to you within 24hrs</p>
-            </InputHeader>
-            <InputForm>
-              <InputDiv>
-                <label htmlFor="name">Name</label>
-                <Input type="text" />
-              </InputDiv>
-              <InputDiv>
-                <label htmlFor="email">Email</label>
-                <Input type="text" />
-              </InputDiv>
-              <InputDiv>
-                <label htmlFor="text">Message</label>
-                <Input type="text" />
-              </InputDiv>
-              <Button type="submit">send</Button>
-            </InputForm>
+            <Image src={img1} />
           </InputContainer>
         </ContentContainer>
       </InnerContainer>
