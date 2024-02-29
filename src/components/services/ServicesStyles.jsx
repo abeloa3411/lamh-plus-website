@@ -26,30 +26,40 @@ export const ServiceH2 = styled.h2`
     transform: translateX(-50%);
     width: 100px;
     height: 5px;
-    background-color: #e91e63;
+    background-color: #ff5f1f;
     border-radius: 20px;
   }
 `;
 
 export const ServiceRow = styled.div`
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 30px;
+  display: flex;
+  justify-content: center;
+
+  @media screen And (max-width: 768px) {
+    flex-direction: column;
+  }
 `;
 
 export const Service = styled.div`
   padding: 25px 15px;
-  background: #151515;
+  background: #ff5f1f;
   font-size: 15px;
   border-radius: 5px;
   text-align: center;
   cursor: pointer;
   transition: 0.5s;
+  width: 250px;
+  margin-right: 2rem;
 
   &:hover {
     color: #000;
     background-color: #fff;
     transform: scale(1.05);
+  }
+
+  @media screen and (max-width: 768px) {
+    margin-bottom: 2rem;
+    width: 100%;
   }
 `;
 
@@ -58,4 +68,21 @@ export const ServiceUl = styled.ul`
 `;
 export const Li = styled.li`
   margin-bottom: 10px;
+`;
+export const ServiceOuterContainer = styled.section`
+  width: 100%;
+`;
+export const ServiceInnerContainer = styled.div`
+  position: relative;
+  height: 100%;
+`;
+export const ServiceBackgroundImg = styled.img`
+  width: 100%;
+  height: 85vh;
+  object-fit: cover;
+  background-position: center;
+
+  @media screen and (max-width: 768px) {
+    height: 230vh;
+  }
 `;

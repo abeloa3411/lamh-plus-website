@@ -4,6 +4,37 @@ export const AboutContainer = styled.section`
   width: 100%;
   padding: 0 8%;
   margin-bottom: 5rem;
+  display: flex;
+  flex-direction: column;
+
+  @media screen and(max-width: 768px) {
+  }
+`;
+export const AboutUsContainer = styled.div`
+  width: 100%;
+`;
+
+export const InnerContainer = styled.div`
+  display: flex;
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
+`;
+export const ImageContainer = styled.div`
+  padding: 2rem;
+`;
+
+export const Image = styled.img`
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
+`;
+
+export const AboutUsContent = styled.div``;
+export const Content = styled.p`
+  padding: 2rem;
+  line-height: 30px;
 `;
 
 export const AboutH2 = styled.h2`
@@ -22,7 +53,7 @@ export const AboutH2 = styled.h2`
     transform: translateX(-50%);
     width: 100px;
     height: 5px;
-    background-color: #e91e63;
+    background-color: #ff5f1f;
     border-radius: 20px;
   }
 `;
@@ -44,7 +75,7 @@ export const Service = styled.div`
 
   &:hover {
     color: #fff;
-    background-color: #151515;
+    background-color: #ff5f1f;
     transform: scale(1.05);
   }
 `;

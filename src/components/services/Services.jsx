@@ -2,31 +2,29 @@ import React from "react";
 import {
   Li,
   Service,
+  ServiceBackgroundImg,
   ServiceContainer,
   ServiceH2,
+  ServiceInnerContainer,
+  ServiceOuterContainer,
   ServiceRow,
   ServiceUl,
 } from "./ServicesStyles";
 import img from "../../assets/images/service.jpg";
-import {
-  BackgroundImg,
-  HeroContainer,
-  InnerContainer,
-} from "../hero/HeroStyles";
 
 const Services = () => {
   return (
     <>
-      <HeroContainer>
-        <InnerContainer>
-          <BackgroundImg src={img} />
+      <ServiceOuterContainer>
+        <ServiceInnerContainer>
+          <ServiceBackgroundImg src={img} />
 
           <ServiceContainer>
             <ServiceH2>Our Services</ServiceH2>
             <ServiceRow>
               <Service>
                 <h3 style={{ marginBottom: "2rem" }}>
-                  Internationa Express Export & Import
+                  International Express Export & Import
                 </h3>
                 <ServiceUl>
                   <Li>
@@ -90,8 +88,8 @@ const Services = () => {
               </Service>
             </ServiceRow>
           </ServiceContainer>
-        </InnerContainer>
-      </HeroContainer>
+        </ServiceInnerContainer>
+      </ServiceOuterContainer>
     </>
   );
 };

@@ -24,6 +24,11 @@ export const ContentContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   height: 50vh;
+
+  @media screen and (max-width: 768px) {
+    grid-template-columns: repeat(1, 1fr);
+    width: 100%;
+  }
 `;
 export const ContentText = styled.div`
   margin: 20px;
@@ -41,7 +46,7 @@ export const Button = styled.button`
   cursor: pointer;
   font-weight: bold;
   font-size: 1.2rem;
-  background: linear-gradient(to right, #ff416c, #ff4b2b);
+  background: linear-gradient(to right, #ff5f1f, #871f78);
   border: none;
   border-radius: 10px;
   box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.2);
